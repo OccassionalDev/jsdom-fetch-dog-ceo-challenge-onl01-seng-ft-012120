@@ -6,5 +6,8 @@ function loadImages() {
   const imgUrl = "https://dog.ceo/api/breeds/image/random/4";
   
   fetch(imgUrl)
-  .then 
+    .then(resp=> resp.json())
+    .then(result => {
+      result.message.forEach(image => addImage(image))
+    });
 }
