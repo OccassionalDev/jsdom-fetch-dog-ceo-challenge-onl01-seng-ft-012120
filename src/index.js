@@ -3,7 +3,7 @@ console.log('%c HI', 'color: firebrick');
 // Setup on load 
 document.addEventListener('DOMContentLoaded', function () {
   loadImages();
-}
+});
 
 
 // Challenge 1
